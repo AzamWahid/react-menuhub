@@ -197,7 +197,7 @@ export default function AllFoodItems() {
         </div> 
         <div className="menuBody">
           {
-            menuItems?.filter((fItem) =>  fItem.type == selectedType || selectedType == 'All').map((item) => (
+            menuItems?.filter((fItem) =>  fItem.type == selectedType || selectedType == 'all').map((item) => (
 
               <FoodItem key={item.Name} name={item.Name} desc={item.Desc} qnty={item.qnty} price={item.price} imgURL={item.img} />
 
