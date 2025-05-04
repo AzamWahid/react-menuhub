@@ -25,7 +25,7 @@ export default function FoodItem({ name, desc,qnty, price, imgURL }) {
                             <small className="text-body-secondary">Rs. {price}</small>
                         </p>
                         <p className="card-text">
-                            <button style={{ backgroundColor: '#cd9027' }}>Add to Cart</button>
+                            <button style={{ backgroundColor: '#cd9027' }}   disabled={qnty === 0}>Add to Cart</button>
                         </p>
                     </div>
                 </div>

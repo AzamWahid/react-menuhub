@@ -178,7 +178,7 @@ const menuItems = [
 export default function AllFoodItems() {
 
 
-  const [selectedType, setselectedType] = useState('All')
+  const [selectedType, setselectedType] = useState('all')
 
   function selectFoodType(pType) {
     setselectedType(pType);
