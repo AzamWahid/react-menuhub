@@ -4,7 +4,7 @@ import './FoodItem.css'; // Import your custom CSS
 
 
 
-export default function FoodItem({ name, desc,qnty, price, imgURL }) {
+export default function FoodItem({ name, desc, qnty, price, imgURL }) {
     return (
 
         <div className="card mb-3" style={{ width: '550px', backgroundColor: 'transparent', border: '1px solid rgb(231, 200, 145)' }}>
@@ -17,7 +17,7 @@ export default function FoodItem({ name, desc,qnty, price, imgURL }) {
                         <h5 className="card-title">{name}</h5>
                         <p className="card-text">{desc}</p>
                         <p className="card-text">
-                            <small className={qnty == 0 ? "redText" : "text-body-secondary"} style={{fontWeight : 'bold' }}>
+                            <small className={qnty == 0 ? "redText" : "text-body-secondary"} style={{ fontWeight: 'bold' }}>
                                 {qnty != 0 ? `Quantity Available: ${qnty}` : 'Out of Stock'}
                             </small>
                         </p>
@@ -25,7 +25,8 @@ export default function FoodItem({ name, desc,qnty, price, imgURL }) {
                             <small className="text-body-secondary">Rs. {price}</small>
                         </p>
                         <p className="card-text">
-                            <button style={{ backgroundColor: '#cd9027' }}   disabled={qnty === 0}>Add to Cart</button>
+                            <button style={{ backgroundColor: qnty === 0 ? '#ccc' : '#cd9027', cursor: qnty === 0 ? 'not-allowed' : 'pointer' }} disabled={qnty === 0}>
+                                Add to Cart</button>
                         </p>
                     </div>
                 </div>
