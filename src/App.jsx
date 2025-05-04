@@ -13,9 +13,11 @@ function App() {
     // <div className="App">
     // </div > 
     <>
-      <HeaderHeading heading="--- FAST REACT PIZZA CO. ---" />
+      <HeaderHeading heading="--- FAST REACT FOOD CO. ---" />
       <MenuHead heading="--- OUR MENU ---" />
-      <Paragraph paraContent="Authentic Italian pizza made with love, tradition, and the freshest ingredients. Taste Italy in every slice!"/>
+      <Paragraph paraContent="Fast, fresh, and flavorful — powered by React. Order smart. Eat fast."
+
+/>
       <AllFoodItems />
       <Footer/>
     </>
