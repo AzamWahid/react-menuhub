@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .navBtns ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menuHead {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .menuBody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+  
+  .row {
+    height: 100%;
+  }
+  
+  .cardImg img {
+    width: 80%;
+    height: 80%;
+  }
+  
+
+  .redText {
+    color: red;
+  }
